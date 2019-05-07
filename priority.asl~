@@ -1,7 +1,11 @@
-// Agent priority in project IA.mas2j
-
-/* Initial beliefs and rules */
-energy(70).
+// Agent priority in project IA.mas2j
+
+
+
+/* Initial beliefs and rules */
+
+
+energy(70).
 off(subA).
 off(subB).
 off(subC).
@@ -12,7 +16,8 @@ off(subM).
 off(subN).
 off(subO).
 off(subP).
-
+
+
 /* Prioridades */
 
 +on(subA) : off(subC) <- .broadcast(untell,priority(subA)); .broadcast(tell, priority(subC)); .print("Prioridade: C"). //C

@@ -13,7 +13,7 @@ unconnected(subO).
 +on(subC) <- -unconnected(subO); 
 			.broadcast(untell,unconnected(subO));
 			+connected(subO);
-			.broadcast(tell,unconnected(subO));
+			.broadcast(tell,connected(subO));
 			.print("O conectado").
 
 
@@ -24,11 +24,12 @@ unconnected(subO).
 
 			
 /* Get On */
+// isso aqui nao ta funcionando ainda, tem que arrumar
 +energy(X) : priority(subO) & connected(subO) & X >= 40 <- +on(subO); -off(subO).
 
 +energy(X) : priority(subC) & unconnected(subC) &  unconnected(subG) & unconnected(subL) & connected(subO) & X >= 40 <- +on(subO); -off(subO).
 
-+priority(subG) : unconnected(subG) & unconnected(subL) & connected(subO) <- +on(subO); -off(subO).
++energy(X) : priority(subG) & unconnected(subC) &  unconnected(subG) & unconnected(subL) & connected(subO) & X >= 40 <- +on(subO); -off(subO).
 
 +energy(X) : priority(subL) & unconnected(subL) & connected(subO) & X >= 40 <- +on(subO); -off(subO).
 
