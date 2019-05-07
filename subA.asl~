@@ -1,0 +1,13 @@
+// Agent SubA in project IA.mas2j
+
+/* Initial beliefs and rules */
+on(subA).
+
+/* Initial goals */
+!tellstatus.
+
+
+/* Plans */
++!tellstatus: on(subA) <- .broadcast(tell,on(subA)).
+						  
+

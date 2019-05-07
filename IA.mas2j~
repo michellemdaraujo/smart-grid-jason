@@ -1,0 +1,51 @@
+/*
+
+    iA
+
+    ---------------------------
+
+
+
+    Jason Project File
+
+
+
+    This file defines the initial state of the MAS
+
+
+
+    Jason 
+
+    Maio 05, 2019 - 20:53:58
+
+*/
+
+
+
+MAS iA {
+
+
+
+    infrastructure: Centralised
+
+
+
+    agents:
+	
+        auxiliar;
+		
+        subA;
+
+        subB;
+
+        subC;
+
+        subF;
+
+        subG;
+
+        subO;
+
+}
+
+
